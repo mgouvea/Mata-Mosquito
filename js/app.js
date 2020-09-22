@@ -48,7 +48,7 @@ function positionMosquito() {
     if (lifes === 1) {
       window.location.href = 'gameOver.html';
     } else {
-      lifeID.src = 'imagens/coracao_vazio.png';
+      lifeID.src = 'img/coracao_vazio.png';
       lifes--;
     }
   }
@@ -62,7 +62,7 @@ function positionMosquito() {
   // criar elemento html
   let mosquito = document.createElement('img');
 
-  mosquito.src = 'imagens/mosquito.png';
+  mosquito.src = 'img/mosquito.png';
   mosquito.className = `${randomSizeMosquito()} ${randomSideMosquito()}`;
   mosquito.style.left = `${positionX}px`;
   mosquito.style.top = `${positionY}px`;
@@ -106,13 +106,13 @@ function randomSideMosquito() {
 
 function soundMosquito() {
   let audio = new Audio();
-  audio.src = 'sons/somMosquito.m4a';
+  audio.src = 'sounds/somMosquito.m4a';
   audio.play();
 }
 
 function soundKillMosquito() {
   let audioKill = new Audio();
-  audioKill.src = 'sons/killSound.mp3';
+  audioKill.src = 'sounds/killSound.mp3';
   audioKill.play();
 }
 
